@@ -15,3 +15,12 @@ jobs:
             - "node_modules"
       - run: npm run test --single-run --no-progress --browser=ChromeHeadlessCI
       - run: npm run e2e --no-progress --config=protractor-ci.conf.js
+  deploy:
+    docker:
+      - image: buildpack-deps:trusty
+    steps:
+      - checkout
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
