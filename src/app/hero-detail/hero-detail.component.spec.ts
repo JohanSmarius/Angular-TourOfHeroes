@@ -3,9 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HeroDetailComponent } from './hero-detail.component';
 import { FormsModule } from '@angular/forms';
 
-describe('HeroDetailComponent', () => {
-  let component: HeroDetailComponent;
-  let fixture: ComponentFixture<HeroDetailComponent>;
+// describe('HeroDetailComponent', () => {
+//   let component: HeroDetailComponent;
+//   let fixture: ComponentFixture<HeroDetailComponent>;
 
   // beforeEach(async(() => {
   //   TestBed.configureTestingModule({
@@ -24,4 +24,4 @@ describe('HeroDetailComponent', () => {
   // it('should create', () => {
   //   expect(component).toBeTruthy();
   // });
-});
+//});
